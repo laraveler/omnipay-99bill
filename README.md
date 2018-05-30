@@ -270,3 +270,11 @@ try {
     // @todo 这里为退款异常业务逻辑
 }
 ```
+
+[ico-version]: https://img.shields.io/packagist/v/x-class/omnipay-99bill.svg
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg
+[ico-downloads]: https://img.shields.io/packagist/dt/x-class/omnipay-99bill.svg
+
+[link-packagist]: https://packagist.org/packages/x-class/omnipay-99bill
+[link-downloads]: https://packagist.org/packages/x-class/omnipay-99bill
+[link-author]: https://github.com/laraveler
