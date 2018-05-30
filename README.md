@@ -25,7 +25,7 @@ PHP版本要求：PHP5.6+
 
 ```shell
 
-$ composer require laraveler/omnipay-99bill -vvv
+$ composer require x-class/omnipay-99bill -vvv
 
 ```
 
