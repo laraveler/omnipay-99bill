@@ -18,7 +18,8 @@
         }
     ],
     "require": {
-        "omnipay/common": "^3.0"
+        "omnipay/common": "^3.0",
+        "php-http/guzzle6-adapter": "*"
     },
     "autoload": {
         "psr-4": {
