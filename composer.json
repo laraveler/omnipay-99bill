@@ -1,0 +1,34 @@
+{
+    "name": "laraveler/omnipay-99bill",
+    "description": "快钱支付SDK",
+    "type": "library",
+    "keywords": [
+        "99bill",
+        "kuaiqian",
+        "omnipay",
+        "pay",
+        "payment"
+    ],
+    "homepage": "https://github.com/laraveler/omnipay-99bill",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mr.Awei",
+            "email": "happyjkw2005@gmail.com"
+        }
+    ],
+    "require": {
+        "omnipay/common": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Bill99\\": "src/"
+        },
+        "files": [
+            "src/Common/helpers.php"
+        ]
+    },
+    "require-dev": {
+
+    }
+}
