@@ -1,5 +1,9 @@
 # omnipay-99bill
 
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Total Downloads][ico-downloads]][link-downloads]
+[![Software License][ico-license]](LICENSE)
+
 基于Omnipay的快钱支付SDK
 
 该文档共包含以下5个部分：  
