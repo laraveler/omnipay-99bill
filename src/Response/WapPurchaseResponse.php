@@ -13,6 +13,8 @@ use Symfony\Component\HttpFoundation\Response as HttpResponse;
  */
 class WapPurchaseResponse extends AbstractResponse implements RedirectResponseInterface
 {
+    protected $request;
+
     public function isSuccessful()
     {
         return false;
@@ -25,7 +27,7 @@ class WapPurchaseResponse extends AbstractResponse implements RedirectResponseIn
 
     public function getRedirectUrl()
     {
-        return $this->request->getEndpoint();
+        return $this->request->getEndpoint() . '?' . http_build_query($this->getRedirectData());
     }
 
     /**
@@ -45,10 +47,10 @@ class WapPurchaseResponse extends AbstractResponse implements RedirectResponseIn
     }
 
 
-	/**
-	 * @return HttpRedirectResponse|HttpResponse|static
-	 */
-	public function getRedirectResponse()
+    /**
+     * @return HttpRedirectResponse|HttpResponse|static
+     */
+    public function getRedirectResponse()
     {
         if (!$this instanceof RedirectResponseInterface || !$this->isRedirect()) {
             throw new \RuntimeException('This response does not support redirection.');
@@ -81,7 +83,7 @@ class WapPurchaseResponse extends AbstractResponse implements RedirectResponseIn
 						</html>';
             $output = sprintf(
                 $output,
-                htmlentities($this->getRedirectUrl(), ENT_QUOTES, 'UTF-8', false),
+                htmlentities($this->request->getEndpoint(), ENT_QUOTES, 'UTF-8', false),
                 $hiddenFields
             );
 
